@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fast food</title>
+<link rel="stylesheet" href="jueves.css">
+<link rel="icon" href="logos/fast.png" type="image/png">	
+</head>
+
+<body>
+<header>
+  <div id="encabezado">
+    <div id="logo"> <img src="logos/fast.png" alt="" width="310px" height="225px"> </div>
+    <div> <a style="text-decoration: none; color: black" href="inicio.php">
+      <h2>FAST FOOD</h2>
+      </a>
+      <h1>"Tu comida favorita, a solo un click de distancia"</h1>
+    </div>
+    <div class="contenedor"> <img src="img/cocina.png.png" alt="" > </div>
+  </div>
+</header>
+<div class="containe-3">
+  <div class="title-3">JUEVES</div>
+  <div class="container">
+    <div class="title">COMIDA</div>
+    <li class="ingredient-item">
+      <button onclick="saludar()" class="sope">
+      <h3>Sope</h3>
+      <script>
+                function saludar(){
+                  console.log("Elegiste sope")
+                  alert("Elegiste sope")
+                  document.getElementById("comida1").src="img/sopes.png";
+                  document.getElementById("precio").textContent="Precio: $13 pesos";
+                  document.getElementById("comida1").style.height="200px";
+                  document.getElementById("comida1").style.width="200px";
+                  document.getElementById("comn").value = "sope";
+                    document.getElementById("comp").value = "13";
+                }
+              </script> 
+      <img src="img/sopes.png" height="90" width="90" alt=""> </button>
+      <button onclick="saludar2()" class="quesadilla" > 
+      <script>
+              function saludar2(){
+                console.log("Elegiste quesadilla")
+                alert("Elegiste quesadilla")
+                document.getElementById("comida1").src="img/quesadillas.png";
+                document.getElementById("precio").textContent="Precio: $13 pesos";
+                document.getElementById("comida1").style.height="200px";
+                document.getElementById("comida1").style.width="200px";
+                document.getElementById("comn").value = "Quesadillas";
+                document.getElementById("comp").value = "20";
+              }
+            </script>
+      <h3>quesadillas</h3>
+      <img src="img/quesadillas.png" height="90" width="90" alt=""> </button>
+      <button onclick="saludar1()" class="sincronizada" > 
+      <script>
+                function saludar1(){
+                  console.log("Elegiste sincronizada")
+                  alert("Elegiste sincronizada")
+                  document.getElementById("comida1").src="img/sincronizadas.png";
+                  document.getElementById("precio").textContent="Precio: $15 pesos";
+                  document.getElementById("comida1").style.height="200px";
+                  document.getElementById("comida1").style.width="200px";
+                  document.getElementById("comn").value = "sincronizada";
+                    document.getElementById("comp").value = "15";
+                }
+              </script>
+      <h3>Sincronizada</h3>
+      <img src="img/sincronizadas.png" height="90" width="90" alt=""> </button>
+      <button onclick="saludar3()" class="pambazo" > 
+      <script>
+                function saludar3(){
+                  console.log("Elegiste pambazo")
+                  alert("Elegiste pambazo")
+                  document.getElementById("comida1").src="img/pambazos.png";
+                  document.getElementById("precio").textContent="Precio: $25 pesos";
+                  document.getElementById("comida1").style.height="200px";
+                  document.getElementById("comida1").style.width="200px";
+                  document.getElementById("comn").value = "pambazo";
+                    document.getElementById("comp").value = "25";
+                }
+              </script>
+      <h3>pambazo</h3>
+      <img src="img/pambazos.png" height="90" width="90" alt=""> </button>
+    </li>
+  </div>
+  <div class="container-2">
+    <div class="title-2">BEBIDA</div>
+    <li class="ingredient-item-2">
+      <button onclick="saludar4()" class="jamaica"> 
+      <script>
+                  function saludar4(){
+                    console.log("Elegiste agua de jamaica")
+                    alert("Elegiste agua de jamaica")
+                    document.getElementById("bebida1").src="img/aguajamaica.png";
+                    document.getElementById("precio2").textContent="Precio: $20 pesos";
+                    document.getElementById("bebida1").style.height="200px";
+                    document.getElementById("bebida1").style.width="200px";
+                    document.getElementById("bebn").value = "agua de jamaica";
+                    document.getElementById("bebp").value = "20";
+                  }
+                </script>
+      <h3>Jamaica</h3>
+      <img src="img/aguajamaica.png" height="90" width="90" alt=""> </button>
+      <button onclick="saludar5()" class="horchata"> 
+      <script>
+                  function saludar5(){
+                    console.log("Elegiste agua de horchata")
+                    alert("Elegiste agua de horchata")
+                    document.getElementById("bebida1").src="img/aguahorchata.png";
+                    document.getElementById("precio2").textContent="Precio: $20 pesos";
+                    document.getElementById("bebida1").style.height="200px";
+                    document.getElementById("bebida1").style.width="200px";
+                    document.getElementById("bebn").value = "agua de horchata";
+                    document.getElementById("bebp").value = "20";
+                  }
+                </script>
+      <h3>Horchata</h3>
+      <img src="img/aguahorchata.png" height="90" width="90" alt=""> </button>
+      <button onclick="saludar6()" class="tamarindo"> 
+      <script>
+                  function saludar6(){
+                    console.log("Elegiste agua de tamarindo")
+                    alert("Elegiste agua de Tamarindo")
+                    document.getElementById("bebida1").src="img/aguatamarindo.png";
+                    document.getElementById("precio2").textContent="Precio: $20 pesos";
+                    document.getElementById("bebida1").style.height="200px";
+                    document.getElementById("bebida1").style.width="200px";
+                    document.getElementById("bebn").value = "agua de tamarindo";
+                    document.getElementById("bebp").value = "20";
+                  }
+                </script>
+      <h3>Tamarindo</h3>
+      <img src="img/aguatamarindo.png" height="100" width="100" alt=""> </button>
+      <button onclick="saludar7()" class="limon"> 
+      <script>
+                  function saludar7(){
+                    console.log("Elegiste agua de limon")
+                    alert("Elegiste agua de limon")
+                    document.getElementById("bebida1").src="img/agualimon.png";
+                    document.getElementById("precio2").textContent="Precio: $20 pesos";
+                    document.getElementById("bebida1").style.height="200px";
+                    document.getElementById("bebida1").style.width="200px";
+                    document.getElementById("bebn").value = "agua de limon";
+                    document.getElementById("bebp").value = "20";
+                    alert(value("bebp"));
+                  }
+                </script>
+      <h3>limón</h3>
+      <img src="img/agualimon.png" height="90" width="90" alt=""> </button>
+    </li>
+  </div>
+  <div class="container-1" > <img id="comida1" src="" alt="">
+    <h3 id="precio"></h3>
+    <input type="hidden" name="comn" id="comn" value="">
+    <input type="hidden" name="comp" id="comp" value="">
+    <div class=""> </div>
+  </div>
+  <div class="container-3"> <img id="bebida1" src="" alt="">
+    <h3 id="precio2"></h3>
+    <input type="hidden" name="bebn" id="bebn" value="">
+    <input type="hidden" name="bebp" id="bebp" value="">
+    <div class=""></div>
+  </div>
+</div>
+<section>
+  <button herf="2-ticket" onclick="ticket()" onclick="audio.play()" class="blue-button">
+  Comprar
+  </button>
+</section>
+<script>
+		  const audio = new audio();
+		  audio.scr ="./moneda.mp3";
+        function ticket(){
+          var valorInput = document.getElementById("bebn").value;
+          var valorInput2 = document.getElementById("bebp").value;
+          var valorInput3 = document.getElementById("comn").value;
+          var valorInput4 = document.getElementById("comp").value;
+          window.location.href = "ticket.php?bebn=" + encodeURIComponent(valorInput) + "&bebp=" + encodeURIComponent(valorInput2) + "&comn=" + encodeURIComponent(valorInput3) + "&comp=" + encodeURIComponent(valorInput4);
+        }
+      </script>
+</body>
+</html>

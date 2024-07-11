@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="ticket.css.css">
+<head>
+    <title>Ticket</title>
+</head>
+<body>
+    <h1>Ticket</h1>
+    <div id="ticket">
+        <div class="ticket-product">
+            <p class="ticket-label">Comida :</p>
+            <p id="producto1"></p>
+            <p class="ticket-label">Precio:</p>
+            <p class="ticket-price" id="precio1"></p>
+        </div>
+
+        <div class="ticket-product">
+            <p class="ticket-label">Bebida :</p>
+            <p id="producto2"></p>
+            <p class="ticket-label">Precio:</p>
+            <p class="ticket-price" id="precio2"></p>
+        </div>
+
+        <p id="total-label">Total:</p>
+        <p id="total-value"></p>
+
+        <a href="index-3.html" class="blue-button">Volver</a>
+        <a href="index-venta.html" class="button-2">siguiente</a>
+
+
+        
+    </div>
+
+    <script>
+        var url = new URL(window.location.href);
+        var params = new URLSearchParams(url.search);
+
+        var producto1 = params.get("comn");
+        var precio1 = parseFloat(params.get("comp"));
+        var producto2 = params.get("bebn");
+        var precio2 = parseFloat(params.get("bebp"));
+
+        document.getElementById("producto1").textContent = producto1;
+        document.getElementById("precio1").textContent = "$" + precio1.toFixed(2);
+        document.getElementById("producto2").textContent = producto2;
+        document.getElementById("precio2").textContent = "$" + precio2.toFixed(2);
+
+        var total = precio1 + precio2;
+        document.getElementById("total-value").textContent = "$" + total.toFixed(2);
+    </script>
+</body>
+</html>

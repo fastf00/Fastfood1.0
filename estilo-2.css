@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #e0e0d5;
+}
+
+
+
+header
+{
+
+    background: rgb(219, 137, 90);
+    width: 100%;
+    height: 200px;
+    box-shadow:  0px 0px 0px #224628;
+    border-bottom-color:  #5d755a;
+    
+}
+
+#logo
+{
+  width: 30%;
+  float: left;
+  color: #fff;
+    
+}
+
+
+.contenedor
+{
+width: 30%;
+right: 120px;
+    
+}
+.contenedor img{
+  top: 20px;
+  position: absolute;
+  right: 30px;
+  width: 10%;
+}
+h1{
+	position: relative;
+    font-size: 30px;
+    top: 65px;
+    right: 15px;
+	left: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: azure; 	
+}
+
+h2{
+	position: relative;
+	font-size: 60px;
+	top: 30px;
+	right: 2%;
+	left: 12%;
+}
+
+
+.cuerpo{
+    margin-top: 60px;
+    text-align: center;
+}
+.cuerpo img{
+    height: 400px;
+    width: 50%;
+}
+
+
+
+
+.container .btn-menu label{
+    color: #000000;
+    font-size: 30px;
+}
+
+
+.container .btn-menu, .logo{
+    float: left;
+    line-height: 70px;
+
+}
+
+
+#btn-menu{
+    display: none;
+    width: 100px;
+    
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+    
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+p{
+	display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/
